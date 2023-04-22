@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# This script is used to run the main program
-startDate=`date -d "2023-03-11" "+%s"`
-currentDate=`date "+%s"`
+export red='\033[0;31m'
+export green='\033[0;32m'
+export blue='\033[0;34m'
 
-echo "Day #$((($currentDate - $startDate)/(60*60*24)))"
+./getCurrentDay.sh
